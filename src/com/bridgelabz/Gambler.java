@@ -6,6 +6,11 @@ public class Gambler {
     int amount = 100;
 
     public static void main(String[] args) {
-        System.out.println("Gambler total amount $100 and bet is $1");
+        int bet = (int) (Math.floor(Math.random() * 10) % 2);
+        if (bet == 1) {
+            System.out.println("WON the Game");
+        } else {
+            System.out.println("LOOSE the Game");
+        }
     }
 }
